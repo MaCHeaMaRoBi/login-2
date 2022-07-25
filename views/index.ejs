@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Server</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Home Servers</h1>
+    </nav>
+    <main>
+      <section class="apps">
+        <h2>Applications</h2>
+        <a class="app" href="https://nas.robertgentea.com">
+          <img class="appLogo" src="imgs/omv.png" />
+          <div>
+            <h3>Open Media Vault</h3>
+            <p>diy nas</p>
+          </div>
+        </a>
+        <a class="app" href="https://plex.robertgentea.com">
+          <img class="appLogo" src="imgs/plex.png" />
+          <div>
+            <h3>Plex</h3>
+            <p>Online streaming platform</p>
+          </div>
+        </a>
+        <a class="app" href="https://photo.robertgentea.com">
+          <img class="appLogo" src="imgs/photoprism.png" />
+          <div>
+            <h3>PhotoPrism</h3>
+            <p>Online Photo viewer</p>
+          </div>
+        </a>
+        <a class="app" href="https://pihole-home.tk/admin/">
+          <img class="appLogo" src="imgs/pihole.png" />
+          <div>
+            <h3>Pi Hole</h3>
+            <p>Network wide adBlocker</p>
+          </div>
+        </a>
+      </section>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button id="logOutBtn" type="submit">Log Out</button>
+      </form>
+    </main>
+  </body>
+</html>
