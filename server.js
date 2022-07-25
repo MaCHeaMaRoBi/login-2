@@ -1,8 +1,6 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 3000;
-const host = "0.0.0.0";
 const passport = require("passport");
 const flash = require("express-flash");
 const session = require("express-session");
@@ -106,6 +104,6 @@ function checkNotAuthenticated(req, res, next) {
   next();
 }
 
-app.listen(port, host, () => {
+app.listen(process.env.PORT, () => {
   console.log("Listening on port", port);
 });
